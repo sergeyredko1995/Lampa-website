@@ -1,0 +1,576 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,400&subset=latin,cyrillic);
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+	transition: background-color 0.5s linear;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	/*Obnulim otstup*/
+	margin: 0 auto;
+	padding: 0;
+	color: #fff;
+	background-color: #000000;
+}
+
+header{
+	background-image: url('img/main.jpg');
+	background-size: cover;
+}
+
+footer{
+	padding: 24px;
+}
+iframe{
+	display: block;
+	margin:auto;
+}
+.wrap{
+	max-width: 480px;
+	margin: auto;
+}
+
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+	align-items:center;
+}
+
+.topMenu{
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+.topMenu li{
+	font-size: 12px;
+	padding: 8px;
+}
+.topMenu li:hover{
+	transition: background-color 0.1s linear;
+	color: black;
+	background-color: yellow;
+}
+
+.logo{
+	margin: 40px auto 8px;
+	text-align: center;
+	color: #fff;
+}
+
+.headerContent{
+	margin: auto;
+	display: block;
+	text-align: center;
+	width: 60%;
+}
+
+.headerContent>h1{
+	font-size: 20px;
+	padding: 12px;
+	border: 8px solid #fff;
+}
+
+.headerContent::before{
+	content: "Хто ми?";
+	background-color: #ffcc00;
+	display: block;
+	width: 40%;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: -16px;
+	margin-top: 8px;
+	padding: 8px;
+}
+
+.history{
+	margin-top: 24px;
+	padding: 24px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.historyImg,.featureImg{
+	width: 225px;
+	height: 150px;
+	display: block;
+}
+.historyText{
+	display: flex;
+	flex-direction: column;
+}
+
+
+h2{	
+	margin: 24px auto;
+	text-transform: uppercase;
+}
+
+.historyText>span{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #ffcc00;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin-top: 16px;
+	position: relative;
+	font-weight: 700;
+	width: 100%;
+}
+
+.aboutUs{
+	margin:64px auto 16px;
+	width: 80%;
+	text-align: center;
+}
+.ourFeatures{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+.featureRows{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: auto;
+	text-align: left;
+	margin: 24px;
+}
+.featureImg{
+	display: block;
+	margin:auto;
+}
+.first,.second,.third,.fourth{
+	text-align: center;
+}
+.first::before,.second::before,.third::before,.fourth::before{
+	content: " ";
+	display: block;
+	background-image: url('img/spriteAbout.png');
+	margin: auto;
+}
+.first::before{
+	width: 32px;
+	height: 24px;
+	background-position: -41px -33px;
+}
+.second::before{
+	width: 32px;
+	height: 32px;
+	background-position: 0 -32px;
+
+}
+.third::before{
+	width: 32px;
+	height: 32px;
+	background-position: -40px 0;
+}
+.fourth::before{
+	width: 32px;
+	height: 32px;
+}
+.greenBack{
+	margin-top: 24px;
+	clear: both;
+	background-color: #ffcc00;
+}
+.contactBlock{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.contactUs{
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 400;
+	text-align: left;
+}
+i:hover{
+	color: #0046FF;
+}
+.contactButton{
+	text-align: center;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	color: #ffcc00;
+	padding: 16px;
+	background-color: white;
+	border: none;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.subscribe{
+	margin: 0;
+	background-color: white;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+}
+.subscriberForm{
+	margin-top: 16px;
+}
+.subscriberForm>input{
+	width: 75%;
+	padding: 8px;
+	text-transform: uppercase;
+	border: 1px solid #e5e5e5;
+	margin-right: -4px;
+}
+.subscriberForm>button{
+	padding: 8px;
+	text-transform: uppercase;
+	border: none;
+	color: white;
+	font-weight: 600;
+	border: 1px solid transparent;
+	background-color: #ffcc00;
+}
+footer,.social{
+	display: flex;
+	justify-content: space-between;
+
+}
+.LIn,.FB,.Youtube,.Twitter{
+	content: " ";
+	background-image: url('img/spriteSocial.png');
+	display: block;
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	margin-left: 16px;
+}
+.LIn{
+	background-position: -40px 0;
+}
+.LIn:hover{
+	background-image: url('img/spriteSocial.png');
+	display: block;
+	width: 19px;
+	height: 19px;
+	background-position: -40px -20px;
+}
+.FB:hover{
+	background-image: url('img/spriteSocial.png');
+	display: block;
+	width: 19px;
+	height: 19px;
+	background-position: 0 -20px;
+}
+.Youtube{
+	background-position: -100px 0;
+}
+.Youtube:hover{
+	background-image: url('img/spriteSocial.png');
+	display: block;
+	width: 19px;
+	height: 19px;
+	background-position: -100px -20px;
+}
+.Twitter{
+	background-position: -119px 0;
+}
+.Twitter:hover{
+	background-image: url('img/spriteSocial.png');
+	display: block;
+	width: 19px;
+	height: 19px;
+	background-position: -119px -20px;
+}
+
+a{
+	color: inherit;
+	height: 100%;
+}
+
+.socialLink{
+	display: block;
+	color: inherit;
+	height: 100%;
+}
+
+.contactForm{
+	text-align: center;
+}
+
+.ourContacts>ul{
+	list-style: none;
+	padding: 0;
+}
+
+.contactForm>form>input{
+	border: none;
+	padding: 8px;
+	margin: 8px;
+	width: 140px;
+}
+
+.map{
+	text-align: center;
+}
+
+.sendQuestion{
+	margin: 16px;
+	padding: 8px;
+	text-transform: uppercase;
+	color: white;
+	border: none;
+	font-weight: 600;
+	background-color: #ffcc00;
+}
+.ourHistory{
+	padding: 0 24px;
+}
+.presentation{
+	width: 280px;
+	height: 200px;
+}
+.prjPost{
+	margin: 24px;
+}
+.prjPost>h1{
+	text-align: center;
+}
+.prjPost>img{
+	margin-left: 24px;
+	margin-bottom: 24px;
+	float: right;
+
+}
+.gallery{
+	display: none;
+	margin: 24px;
+}
+
+.team{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.firstMember,.secondMember,.thirdMember{
+	padding: 8px;
+	margin-top: 16px;
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.avatar>img{
+	width: 240px;
+	height: 180px;
+}
+
+.firstMember>.text,.secondMember>.text,.thirdMember>.text{
+	width: 100%;
+	color: black;
+}
+.Portfolio{
+	padding: 12px;
+}
+.prj{
+	margin-top: 12px;
+	display: flex;
+	padding: 12px;
+	background-color: white;
+	color: black;
+	flex-direction: column;
+}
+.textPrj{
+}
+.imgPrj>img{
+	display: block;
+	margin:auto;
+	width: 200px;
+	height: 130px;
+}
+.portfolio
+{
+	margin: 24px 16px;
+	width: calc(100% - 32px);
+}
+@media (min-width: 960px) {
+
+header{
+	height: 650px;
+}
+.wrap{
+	max-width: 960px;
+}
+.menu{
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.topMenu{
+	display: flex;
+	list-style: none;
+}
+
+.topMenu li{
+	font-size: 14px;
+}
+
+.logo{
+	margin: 0;
+}
+
+.headerContent{
+	margin-top: 120px;
+}
+.headerContent>h1{
+	font-size: 24px;
+}
+
+.headerContent::before{
+	content: "Хто ми?";
+	background-color: #ffcc00;
+	display: block;
+	width: 15%;
+}
+
+.history{
+	padding: 0;
+	flex-direction: row;
+	margin-top: -240px;
+}
+.historyImg{
+	width: 450px;
+	height: 300px;
+}
+.historyText{
+	width: 50%;
+	margin-left: 64px;
+}
+.historyText>span{
+	text-align: center;
+	width: 165px;
+}
+.featureRows{
+	margin: 24px 0 0 0;
+	width: 50%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.featureImg{
+	width: calc(100% - 60%);
+	height: 100%;
+}
+.feature{
+	text-align: left;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+.contactBlock{
+	flex-direction: row;
+}
+.contactUs{
+	width: 45%;
+	font-weight: 700;
+	margin: 0;
+}
+.contactPage{
+	display: flex;
+}
+.contactForm{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 32px;
+	margin-left: 32px;
+	text-align: left;
+	
+}
+.contactForm>form>input,.contactForm>form>textarea{
+	padding: 8px;
+	margin: 16px;
+	background-color: #fefcf9;
+	border: none;
+	border: 1px solid #e5e5e5;
+}
+#question,#secondRow{
+	width: calc(100% - 36px);
+}
+#firstRow{
+	width: calc(50% - 36px);
+}
+.sendQuestion{
+	margin: 16px;
+	padding: 8px;
+	text-transform: uppercase;
+	color: white;
+	border: none;
+	font-weight: 600;
+	background-color: #ffcc00;
+}
+.ourContacts{
+	margin: 8px;
+}
+.ourContacts>ul{
+	padding: 0;
+	list-style: none;
+	margin: 0px;
+		margin-bottom: 24px;
+}
+.ourContacts>ul>li{
+	padding-top:  8px;
+}
+.map{
+	margin: 0;
+	margin-top: 48px;
+	margin-bottom: 32px;
+	width: 50%;
+}
+.map>iframe{
+	width: 100%;
+	height: 100%;
+}
+.presentation{
+	width: 480px;
+	height: 400px;
+}
+
+.gallery{
+	display:block;
+	margin: 24px;
+}
+.gallery>h2{
+	clear: both;
+	text-align: center;
+}
+.team{
+	flex-direction: row;
+}
+.firstMember,.secondMember,.thirdMember{
+	margin: 16px;
+	flex-direction: column;
+}
+.avatar>img{
+	width: 240px;
+	height: 180px;
+}
+.prj{
+	margin-top: 24px;
+	display: flex;
+	padding: 24px;
+	background-color: white;
+	flex-direction: row;
+	color: black;
+}
+.textPrj{
+	padding-left: 24px;
+}
+.imgPrj>img{
+	display: inline;
+	width: 400px;
+	height: 267px;
+}
+.subscribe{
+	margin: 24px;
+}
+}
